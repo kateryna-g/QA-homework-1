@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<table border="1" cellpadding="5">
+  <tr>
+    <td rowspan="3" align="right" valign="bottom" width="150" height="43">1</td>
+    <td rowspan="3" align="right" valign="bottom" width="150" height="43">2</td>
+    <td rowspan="2" align="right" valign="bottom" width="150" height="25">5</td>
+    <td rowspan="2" align="right" valign="bottom" width="150" height="25">6</td>
+    <td rowspan="2" align="right" valign="bottom" width="75" height="25">7</td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+    <td rowspan="2" align="right" valign="bottom" height="25">8</td>
+    <td rowspan="2" height="20"></td>
+    <td rowspan="2"></td>
+  </tr>
+  <tr>
+    <td rowspan="3" align="right" valign="bottom" height="40">3</td>
+    <td rowspan="3" align="right" valign="bottom" height="40">4</td>
+  </tr>
+  <tr>
+    <td rowspan="2" align="right" valign="bottom"></td>
+    <td rowspan="2" align="right" valign="bottom"></td>
+  </tr>
+</table>
+
+<section>
+  <h2>chucknorris</h2>
+  <div>
+    <p>
+      Атрибут со значением chucknorris сделает фон, или текст документа кроваво-красным во всех браузерах и на всех
+      платформах.
+      Пропускаемые цифры распознаются как 0[...]. Некорректные символы распознаются как 0.
+      Так что, например, значения #F0F0F0, F0F0F0, F0F0F, #FxFxFx и FxFxFx – одно и то же.
+    <ul>
+      <li>Заменяем все неправильные шестнадцатеричные символы нулями 0, chucknorris превращается в c00c0000000</li>
+      <li>“Добиваем” число нулями до количества знаков, делимого на 3 (11 -> 12), получаем
+        c00c 0000 0000
+      </li>
+      <li>Разбиваем на три группы, каждая из которых отвечает за одну компоненту RGB:
+        RGB (c00c, 0000, 0000)
+      </li>
+      <li>Обрезаем каждый из аргументов справа, оставляя 2 символа, и получаем наш результат
+        RGB (c0, 00, 00) = #C00000 или он же RGB(192, 0, 0).
+      </li>
+    </ul>
+    </p>
+  </div>
+</section>
+</body>
+</html>

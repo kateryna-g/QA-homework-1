@@ -1,0 +1,33 @@
+body {
+  background: #174955;
+}
+
+table {
+  margin: 40px auto;
+
+  border: 10px solid #d9d3d3;
+  border-collapse: collapse;
+  width: 600px;
+  height: 200px;
+  background: #282e68;
+  color: #d9d3d3;
+
+}
+
+tr {
+  border: 2px solid #D9D3D3FF;
+}
+
+td {
+  border: 2px solid #D9D3D3FF;
+  width: 40px;
+}
+
+h2, p, li {
+  color: #d9d3d3;
+}
+
+h2 {
+  font-family: Courier New, monospace;
+}
+
